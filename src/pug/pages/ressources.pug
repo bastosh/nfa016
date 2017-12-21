@@ -1,0 +1,75 @@
+extends ../base
+
+block title
+  title= "Sébastien Pereda | Ressources"
+
+block content
+  include ../views/menu/menu-ressources.html
+  include ../views/ressources/header.html
+  main.ressources
+    section
+      header
+        h2 Sources d’information
+        p Des blogs à suivre
+      include ../views/ressources/blogs.html
+    section
+      header
+        h2 Inspiration
+        p Des sites pour chercher l’inspiration
+      include ../views/ressources/inspiration.html
+    section
+      header
+        h2 Accessibilité
+        p Pour des sites accessibles à tous
+      include ../views/ressources/accessibilite.html
+    section
+      header
+        h2 Typographie
+        p Pour des sites agréables à lire
+      include ../views/ressources/typographie.html
+    section
+      header
+        h2 Couleurs
+        p Pour éviter les mélanges hasardeux
+      include ../views/ressources/couleurs.html
+    section
+      header
+        h2 Design
+        p Pour des sites qui en jettent
+      include ../views/ressources/design.html
+    section
+      header
+        h2 Images
+        p Pour de belles images optimisées
+      include ../views/ressources/images.html
+    section
+      header
+        h2 Icônes
+        p Pour toujours trouver l’icône qui va bien
+      include ../views/ressources/icones.html
+    section
+      header
+        h2 Éditeurs de texte
+        p Pas de bon artisan sans de bons outils
+        include ../views/ressources/editors.html
+    section
+      header
+        h2 HTML &amp; CSS
+        p Pour ne rien ignorer des fondamentaux
+      include ../views/ressources/html-css.html
+    section
+      header
+        h2 JavaScript
+        p Pour des expériences riches 
+      include ../views/ressources/javascript.html
+    section
+      header 
+        h2 Flux de travail
+        p Pour automatiser au mieux les tâches courantes
+      include ../views/ressources/flux.html
+    section
+      header  
+        h2 Tests et validations
+        p Pour être sûr que tout est parfait
+      include ../views/ressources/test.html
+  include ../views/footer.html

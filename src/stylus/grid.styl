@@ -1,0 +1,42 @@
+[class*="grid"]
+  display grid
+
+[class*="grid"].gutter-sm
+  grid-gap grid-gutter-sm
+
+[class*="grid"].gutter
+  grid-gap grid-gutter
+
+[class*="grid"].gutter-md
+  grid-gap grid-gutter-md
+
+[class*="grid"].gutter-lg
+  grid-gap grid-gutter-lg
+
+[class*="grid"].gutter-xl
+  grid-gap grid-gutter-xl
+
+for i in 1..12
+  .grid-{i}
+    grid-template-columns: repeat(i, 1fr)
+
+for i in 100 150 200 250 300 350 400 500 600
+  .fluid-grid-{i}
+    grid-template-columns: repeat(auto-fit, minmax(i px, 1fr))
+
+for i in 1..12
+  .col-{i}
+    grid-column: auto / span i
+
+for i in 1..12
+  .row-{i}
+    grid-row: auto / span i
+
+.item-first
+  order -1
+
+.item-last
+  order 1
+
+.col-all
+  grid-column 1 / -1

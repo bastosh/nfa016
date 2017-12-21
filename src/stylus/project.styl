@@ -1,0 +1,139 @@
+////////////////////////////////////////////////////////////////////
+///////////////////////// PROJECT STYLES ///////////////////////////
+////////////////////////////////////////////////////////////////////
+
+//***********************
+// TYPOGRAPHY
+//***********************
+h1
+  margin-top spacer-xl
+  margin-bottom spacer-md
+  text-align center
+
+h2, h4
+  margin-bottom 0
+
+//***********************
+// CONTAINER
+//***********************
+
+main
+  max-width md
+  margin 0 auto
+
+//***********************
+// LINKS
+//***********************
+nav ul li a
+  color text-color-base
+  text-decoration none
+
+h2 a, h4 a
+  color primary
+  text-decoration none
+
+a.tag
+  color meta-color
+  text-decoration underline
+  &:hover
+    color darken(meta-color, 15)
+
+
+//***********************
+// MAIN NAV
+//***********************
+nav
+  height 120px
+  border-bottom 1px solid background-color-base
+nav ul
+  list-style-type none
+  padding-left 0
+
+nav, nav ul
+  display flex
+  justify-content center
+  align-items center
+
+nav ul li a
+  color text-color-base
+  &:hover
+    color text-color-base
+    text-decoration none
+
+nav ul li
+  padding .5em 0
+  margin 0 1em
+  text-transform uppercase
+  font-weight 700
+  letter-spacing 1px
+  border-bottom 4px solid background-color-base
+  &:hover
+    border-bottom 4px solid primary
+    transition border-bottom .4s .1s
+
+nav ul li.active
+  border-bottom 4px solid primary
+
+nav img
+  margin 0 1em
+  width 80px
+
+//***********************
+// FOOTER
+//***********************
+#footer
+ padding 2rem
+ text-align center
+ margin-top 50px
+ a
+   text-decoration none
+   color text-color-base
+
+//***********************
+//  HOME
+//***********************
+main.index
+  display flex
+  flex-wrap wrap
+  align-items flex-end
+  img
+    height 380px
+  section
+    max-width 500px
+    margin-right 15px
+    p:last-child
+      margin-bottom 0
+
+//***********************
+// ABOUT
+//***********************
+main.about
+  max-width sm
+
+//***********************
+// BLOG
+//***********************
+main.blog
+  max-width xs
+
+main.article
+  max-width sm
+
+article h1
+  font-size 2em
+  text-align center
+  margin 2em 0 0
+
+p.subtitle
+  text-align center
+  font-size .9em
+  color meta-color
+
+//***********************
+// RESSOURCES
+//***********************
+main.ressources
+  max-width md
+
+.ressources h2, .ressources h2~p
+  text-align center

@@ -1,0 +1,17 @@
+extends ../base
+
+block title
+  title= "Sébastien Pereda | Typographie"
+
+block stylesheets
+  link(rel='stylesheet' href='/css/main.css')  
+  
+block content
+  include ../views/menu/menu-blog.html
+  main.blog
+    h1 Articles classés «&nbsp;Typographie&nbsp;»
+    include ../views/blog/list/apostrophe-list.html 
+  include ../views/footer.html
+
+block scripts
+  script(src='/js/main.js')

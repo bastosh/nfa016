@@ -1,0 +1,32 @@
+//***********************
+// MEDIA OBJECTS
+//***********************
+/* HTML : <div class="media"><img class="media-figure"><div class="media-content"></div></div> */
+
+@media (min-width: sm)
+  [class*="media"] p
+    margin-top: 0
+  [class*="media"] p:last-child
+    margin-bottom 0
+  .media
+    margin-bottom spacer-md
+    display flex
+    align-items flex-start
+    padding 1rem
+    background gray-10
+    &-content
+      flex: 1 1 0%
+      padding 1rem
+      min-height 200px
+      background white
+    &-figure
+      margin-right 1rem
+      max-width 300px
+      max-height 200px
+    &-figure--center
+      align-self center
+    &--reverse
+      flex-direction row-reverse
+      .media-figure
+        margin-right 0
+        margin-left 1rem
