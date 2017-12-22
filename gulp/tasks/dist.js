@@ -21,7 +21,7 @@ gulp.task('copyDist', function () {
   gulp.src(CONFIG.DIST_FILES)
     .pipe(gulp.dest('dist'));
   gulp.src(CONFIG.PAGES_DIST)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist/pages'));
   gulp.src(CONFIG.ARTICLES_2017)
     .pipe(gulp.dest('./dist/articles/2017'));
   gulp.src(CONFIG.TAGS)

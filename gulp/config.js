@@ -41,7 +41,12 @@ module.exports = {
   ],
 
   PUG_PAGES: [
-    'src/pug/pages/*.pug',
+    'src/pug/pages/about.pug',
+    'src/pug/pages/blog.pug',
+    'src/pug/pages/contact.pug',
+    'src/pug/pages/cv.pug',
+    'src/pug/pages/portfolio.pug',
+    'src/pug/pages/ressources.pug',
   ],
 
   PUG_ARTICLES17: [
@@ -53,12 +58,12 @@ module.exports = {
   ],
 
   PAGES_DIST: [
-    '_build/about.html',
-    '_build/blog.html',
-    '_build/contact.html',
-    '_build/cv.html',
-    '_build/portfolio.html',
-    '_build/ressources.html',
+    '_build/pages/about.html',
+    '_build/pages/blog.html',
+    '_build/pages/contact.html',
+    '_build/pages/cv.html',
+    '_build/pages/portfolio.html',
+    '_build/pages/ressources.html',
   ],
 
   ARTICLES_2017: [
