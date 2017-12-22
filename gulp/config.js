@@ -68,11 +68,11 @@ module.exports = {
 
   ARTICLES_2017: [
     '_build/articles/2017/l-apostrophe-la-vraie.html',
-    '_build/articles/2017/test.html',
+    '_build/articles/2017/ameliorer-son-flux-de-travail-avec-hub.html',
   ],
 
   TAGS: [
-    '_build/tags/autres.html',
+    '_build/tags/workflow.html',
     '_build/tags/typographie.html',
   ],
 };

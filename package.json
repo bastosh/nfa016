@@ -1,9 +1,9 @@
 {
-  "name": "fronty",
+  "name": "nfa016",
   "version": "0.1.0",
-  "description": "Front-end starter",
+  "description": "Personnal project",
   "scripts": {
-    "start": "gulp"
+    "publish": "gh-pages -d dist -b master --repo https://github.com/sebastien-pereda/sebastien-pereda.github.io.git"
   },
   "author": "Sébastien Pereda <sebastien.pereda@gmail.com>",
   "license": "MIT",
@@ -26,8 +26,5 @@
   },
   "dependencies": {
     "jquery": "^3.2.1"
-  },
-  "scripts": {
-    "publish": "gh-pages -d dist -b master --repo https://github.com/sebastien-pereda/sebastien-pereda.github.io.git"
   }
 }
