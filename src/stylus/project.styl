@@ -7,7 +7,7 @@
 //***********************
 h1
   margin-top spacer-xl
-  margin-bottom spacer-md
+  margin-bottom spacer-lg
   text-align center
 
 h2, h4
@@ -38,7 +38,7 @@ a.tag
 //***********************
 nav
   height 120px
-  border-bottom 1px solid background-color-base
+  border-bottom 1px solid gray-20
 nav ul
   list-style-type none
   padding-left 0
@@ -78,7 +78,6 @@ nav img
 #footer
  padding 2rem
  text-align center
- margin-top 50px
  a
    text-decoration none
    color text-color-base
@@ -144,8 +143,36 @@ p.subtitle
 //***********************
 // RESSOURCES
 //***********************
+
+
+
 main.ressources
   max-width md
 
 .ressources h2, .ressources h2~p
+  text-align center
+
+//***********************
+// CV
+//***********************
+
+.cv-bg
+  background-color gray-10
+  padding-bottom 5rem
+main.cv
+  h1
+    margin-top 0
+    padding-top 3rem
+  header
+    text-align center
+    margin 1rem 0 2rem
+  h3
+    font-size h4-font-size
+    margin-bottom 0
+  section p:first-of-type
+    color meta-color
+    margin-bottom .5rem
+  section
+    margin-bottom 2rem
+article.formation
   text-align center
