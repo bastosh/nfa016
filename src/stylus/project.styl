@@ -38,15 +38,19 @@ a.tag
 //***********************
 nav
   height 120px
+  @media screen and (max-width: lg)
+    height 80px
   border-bottom 1px solid gray-20
 nav ul
   list-style-type none
   padding-left 0
-
-nav, nav ul
+  margin-bottom 0
+nav, nav ul, nav a
   display flex
-  justify-content center
-  align-items center
+  justify-content space-between
+  @media screen and (min-width: md)
+    justify-content center
+    align-items center
 
 nav ul li a
   color text-color-base
@@ -60,17 +64,54 @@ nav ul li
   text-transform uppercase
   font-weight 700
   letter-spacing 1px
-  border-bottom 4px solid background-color-base
-  &:hover
-    border-bottom 4px solid primary
-    transition border-bottom .4s .1s
+  @media screen and (max-width: md)
+    display none
+  @media screen and (max-width: lg)
+    font-size 15px
+    letter-spacing .5px
+    padding .2em 0
+    margin 0 .5em
+  @media screen and (min-width: md)
+    border-bottom 4px solid background-color-base
+    &:hover
+      border-bottom 4px solid primary
+      transition border-bottom .4s .1s
 
-nav ul li.active
-  border-bottom 4px solid primary
+@media screen and (max-width: md)
+  nav.is-opened
+    height 160px
+  nav.is-opened ul li
+    display block
+  nav ul
+    flex-direction column
+    justify-content space-around
+
+@media screen and (max-width: md)
+  nav ul li.active a
+    color primary
+  nav ul
+    align-items center
+  nav ul li
+    padding-top 1em
+    padding-bottom 1em
+
+@media screen and (min-width: md)
+  nav ul li.active
+    border-bottom 4px solid primary
 
 nav img
   margin 0 1em
   width 80px
+  @media screen and (max-width: lg)
+    width 60px
+
+#logo
+  @media screen and (max-width: md)
+    order -1
+
+.nav-button
+  @media screen and (min-width: md)
+    display none
 
 //***********************
 // FOOTER
@@ -85,17 +126,21 @@ nav img
 //***********************
 //  HOME
 //***********************
+@media screen and (max-width: sm)
+  #typed
+    font-size 28px
 main.index
   display flex
-  flex-wrap wrap
-  align-items flex-end
-  img
-    height 380px
-  section
-    max-width 500px
-    margin-right 15px
-    p:last-child
-      margin-bottom 0
+  @media screen and (min-width: md)
+    flex-wrap wrap
+    align-items flex-end
+    img
+      height 380px
+    section
+      max-width 500px
+      margin-right 15px
+      p:last-child
+        margin-bottom 0
 
 //***********************
 // ABOUT
@@ -143,8 +188,6 @@ p.subtitle
 //***********************
 // RESSOURCES
 //***********************
-
-
 
 main.ressources
   max-width md

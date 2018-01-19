@@ -8,6 +8,7 @@ module.exports = {
   // Example – Install jQuery via npm if needed
   JS_DEPS: [
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/vue/dist/vue.js',
     'src/js/vendors/typed.js',
   ],
 
