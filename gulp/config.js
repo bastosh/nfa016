@@ -10,6 +10,7 @@ module.exports = {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/vue/dist/vue.js',
     'src/js/vendors/typed.js',
+    'src/js/vendors/jquery-ui.js',
   ],
 
   // CSS

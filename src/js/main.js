@@ -28,3 +28,5 @@ function toggleNav() {
 
 toggleNav();
 }());
+
+$( "#tabs" ).tabs();

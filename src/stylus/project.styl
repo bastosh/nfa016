@@ -226,3 +226,33 @@ main.cv
     margin-bottom 2rem
 article.formation
   text-align center
+
+.ui-tabs-nav
+  display flex
+  flex-wrap wrap
+  list-style-type none
+  padding-left 0
+  margin-bottom 2rem
+
+.ui-tabs-tab
+  flex-grow: 1;
+  background: lighten(primary, 30);
+  color: white
+  font-weight: bold;
+  text-align: center;
+  //padding: 1rem 2rem;
+  margin-right: .2rem;
+  cursor: pointer;
+
+.ui-tabs-anchor
+  display block
+  padding 1rem
+
+.ui-tabs-anchor,
+.ui-tabs-anchor:hover,
+.ui-tabs-anchor:active
+  color: white
+
+.ui-tabs-active
+  background primary
+  color white
