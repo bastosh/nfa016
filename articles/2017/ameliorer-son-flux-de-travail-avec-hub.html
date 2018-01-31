@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sébastien Pereda || Développement web, webdesign, communication">
+    <title>Améliorer son flux de travail avec Hub</title>
+    <link rel="icon" type="img/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body><nav>
+  <ul>
+    <li><a href="/pages/about.html">À&nbsp;propos</a></li>
+    <li class="active"><a href="/pages/blog.html">Articles</a></li>
+    <li><a href="/pages/ressources.html">Ressources</a></li>
+  </ul>
+  <a id="logo" href="/index.html"><img src="/img/logo.svg" alt="Logo bastosh"></a>
+  <ul>
+    <li><a href="/pages/portfolio.html">Portfolio</a></li>
+    <li><a href="/pages/cv.html">Curriculum</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+</nav>
+
+    <main class="article"><article>
+  <header>
+    <h1>Améliorer son flux<br> de travail avec Hub</h1>
+    <p class="subtitle">Le <time datetime="2017-12-22">22 décembre 2017</time>, par Sébastien Pereda&thinsp;&mdash;&thinsp;<a class="tag" href="/tags/workflow.html">Workflow</a></p>
+  </header>
+  <p>Hub est un outil en ligne de commande qui étend les fonctionnalités de Git pour intéragir avec GitHub plus facilement. Par exemple&nbsp;:</p>
+  <figure>
+    <pre>
+      <code>
+$ hub clone user/project
+      </code>
+    </pre>
+  </figure>
+  <p>Revient à écrire&nbsp;:</p>
+  <figure>
+    <pre>
+      <code>
+$ git clone git://github.com/user/project.git
+      </code>
+    </pre>
+  </figure>
+  <p>Si vous souhaitez cloner un projet de votre propre repository, vous pouvez juste saisir&nbsp;:</p>
+  <figure>
+    <pre>
+      <code>
+$ hub clone project
+      </code>
+    </pre>
+  </figure>
+  <p>Pour intégrer Hub à votre workflow, il vous suffit, une fois que vous l’avez installé, de créer un alias pour votre shell&nbsp;:</p>
+  <figure>
+    <pre>
+      <code>
+$ alias git="hub"
+      </code>
+    </pre>
+  </figure>
+  <p>De la sorte, chaque fois que vous appelez Git, c’est Hub qui prend la main et vous offre ses fonctionnalités supplémentaires.</p>
+  <p>Et si (comme moi), vous êtes <em>très</em> fainéants, vous pouvez aussi créer un alias pour la commande <code>git&nbsp;clone</code>&nbsp;:
+  <figure>
+    <pre>
+      <code>
+$ alias clone="git clone"
+      </code>
+    </pre>
+  </figure>
+  <p>Désormais, pour cloner un projet, au lieu</p>
+  <ul>
+    <li>d’ouvrir votre navigateur,</li>
+    <li>d’aller sur GitHub,</li>
+    <li>d’aller sur le bon repository,</li>
+    <li>de cliquer sur le bouton cloner,</li>
+    <li>de retourner dans votre terminal,</li>
+    <li>de faire git clone <kbd>cmd</kbd>&nbsp;<kbd>v</kbd>,</li>
+  </ul>
+  <p>vous ferez simplement&nbsp;:</p>
+  <figure>
+    <pre>
+      <code>
+$ clone project
+      </code>
+    </pre>
+  </figure>
+  <p>Il y a bien entendu beaucoup d’autres fonctionnalités intéressantes, comme la possibilité d’ouvrir directement la page du projet dans le navigateur depuis le terminal avec la commande <code>browse</code> (vous savez, au lieu d’ouvrir votre navigateur, d’aller sur GitHub, d’aller sur le bon repository, etc.).</p>
+  <p>Je vous invite à regarder tout cela sur la <a href="https://hub.github.com/">page web du projet Hub</a>.</p>
+</article>
+
+    </main><footer id="footer">
+  <small>&copy;&thinsp;<a href="https://github.com/bastosh">Sébastien Pereda</a>&thinsp;||&thinsp;2018</small>
+</footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
