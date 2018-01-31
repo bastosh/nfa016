@@ -1,18 +1,19 @@
-
 extends ../base
 
-block stylesheets    
-  // build:css css/main.css
-  link(rel='stylesheet' href='/css/main.css')
-  // endbuild
+block stylesheets
+    // build:css css/main.css
+    link(rel='stylesheet' href='/css/main.css')
+    // endbuild
 
 block content
     include ../views/menu.html
     include ../views/index.html
     include ../views/footer.html
-  
+
 block scripts
-  script(src='/js/vendors/jquery.js')
-  script(src='/js/vendors/typed.js')
-  script(src='/js/main.js')
-  script(src='/js/typingEffect.js')
+    // build:js js/main.js
+    script(src='/js/vendors/jquery.js')
+    script(src='/js/vendors/jquery-ui.js')
+    script(src='/js/vendors/typed.js')
+    script(src='/js/main.js')
+    // endbuild
