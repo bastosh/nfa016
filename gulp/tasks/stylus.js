@@ -21,8 +21,6 @@ gulp.task('stylus-utilities', function () {
         .pipe(plumber())
         .pipe(stylus())
         .pipe(gulp.dest('_build/css'))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(cssnano())
         .pipe(gulp.dest('_build/css'));
 });
 

@@ -4,7 +4,7 @@
   "description": "Personnal project",
   "scripts": {
     "publish": "gh-pages -d dist -b master --repo https://github.com/sebastien-pereda/sebastien-pereda.github.io.git",
-    "purify": "purifycss _build/css/utilities.css _build/index.html _build/pages/*.html _build/articles/2017/*.html _build/tags/*.html --min --info --out _build/css/utilities.min.css"
+    "purify": "purifycss _build/css/utilities.css _build/index.html _build/pages/*.html _build/articles/2017/*.html _build/tags/*.html --min --info --out _build/css/utilities.css"
   },
   "author": "Sébastien Pereda <sebastien.pereda@gmail.com>",
   "license": "MIT",
