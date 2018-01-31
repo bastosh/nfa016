@@ -7,8 +7,6 @@ var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
-var plumber = require('gulp-plumber');
-var pug = require('gulp-pug');
 var CONFIG = require('../config.js');
 
 // Erases the dist folder

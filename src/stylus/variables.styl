@@ -15,8 +15,8 @@ font-family-monospace= SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono
 font-family-base= font-family-sans-serif
 
 font-size-base= 18px
-font-size-sm= (font-size-base * .875)
-font-size-lg= (font-size-base * 1.25)
+font-size-sm= round(font-size-base * .85)
+font-size-lg= round(font-size-base * 1.2)
 
 font-weight-thin= 100
 font-weight-light= 200
@@ -38,18 +38,18 @@ line-height-lg= 1.6
 
 headings-line-height= line-height-small
 
-h1-font-size= (font-size-base * 2.5)
-h2-font-size= (font-size-base * 2)
-h3-font-size= (font-size-base * 1.75)
-h4-font-size= (font-size-base * 1.5)
-h5-font-size= (font-size-base * 1.25)
+h1-font-size= (round(font-size-base * 2.5))
+h2-font-size= (round(font-size-base * 2))
+h3-font-size= (round(font-size-base * 1.75))
+h4-font-size= (round(font-size-base * 1.5))
+h5-font-size= (round(font-size-base * 1.15))
 h6-font-size= font-size-base
 
-h1-font-size-sm= (font-size-sm * 2.5)
-h2-font-size-sm= (font-size-sm * 2)
-h3-font-size-sm= (font-size-sm * 1.75)
-h4-font-size-sm= (font-size-sm * 1.5)
-h5-font-size-sm= (font-size-sm * 1.25)
+h1-font-size-sm= (round(font-size-sm * 2.5))
+h2-font-size-sm= (round(font-size-sm * 2))
+h3-font-size-sm= (round(font-size-sm * 1.75))
+h4-font-size-sm= (round(font-size-sm * 1.5))
+h5-font-size-sm= (round(font-size-sm * 1.25))
 h6-font-size-sm= font-size-sm
 
 display1-font-size= (font-size-base * 6)
@@ -93,8 +93,8 @@ grid-gutter-xl= 4em
 //***********************
 // RADIUS
 //***********************
-border-radius-sm= .125rem
-border-radius= .25rem
+border-radius-sm= 2px
+border-radius= 4px
 border-radius-round= 100%
 border-radius-pill= 9999px
 

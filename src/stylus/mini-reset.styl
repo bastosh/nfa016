@@ -59,3 +59,93 @@ samp
   font-family monospace, monospace
   font-size .9em
   line-height 1em
+
+/**
+ * Tables
+ */
+
+table
+  border-collapse: collapse; /* Prevent double borders */
+
+caption
+  padding-top: .75rem
+  padding-bottom: .75rem
+  color: #868e96
+  text-align: left
+  caption-side: bottom
+
+th
+  text-align: inherit
+
+label
+  display: inline-block
+  margin-bottom: .5rem
+
+button
+  border-radius: 0
+
+button:focus
+  outline: 1px dotted
+
+input,
+button,
+select,
+optgroup,
+textarea
+  margin: 0 /* Remove the margin in Firefox and Safari */
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+
+button,
+input
+  overflow: visible /* Show the overflow in Edge */
+
+button,
+select
+  text-transform: none /* Remove the inheritance of text transform in Firefox */
+
+input[type="radio"],
+input[type="checkbox"]
+  box-sizing: border-box /* 1. Add the correct box sizing in IE 10- */
+  padding: 0 /* 2. Remove the padding in IE 10- */
+
+textarea
+  overflow: auto; /* Remove the default vertical scrollbar in IE. */
+  /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
+  resize: vertical
+
+fieldset
+  min-width: 0
+  padding: 0
+  margin: 0
+  border: 0
+
+legend
+  display: block
+  width: 100%
+  max-width: 100% /* 1 */
+  padding: 0
+  margin-bottom: .5rem
+  font-size: 1.5rem
+  line-height: inherit
+  color: inherit /* 2 */
+  white-space: normal /* 1 */
+
+progress
+  vertical-align: baseline /* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+
+[type="search"]
+  outline-offset: -2px /* 2. Correct the outline style in Safari. */
+
+output
+  display: inline-block
+
+summary
+  display: list-item
+
+template
+  display: none
+
+[hidden]
+  display: none !important
