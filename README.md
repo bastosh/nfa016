@@ -1,4 +1,6 @@
-## 2018-02-01 – Mise en production v1
+## [Voir le projet en ligne](https://sebastien-pereda.github.io/)
+
+### 2018-02-01 – Mise en production v1
 
 Les balises ```<div>``` n’ont été utilisées que lorsqu’il n’était pas possible de faire autrement.
   
