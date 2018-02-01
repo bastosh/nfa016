@@ -12,9 +12,17 @@ html(lang='fr' dir='ltr')
     meta(name='msapplication-config' content='browserconfig.xml')
     block stylesheets
       link(rel='stylesheet' href='/css/main.css')
+      link(rel='stylesheet' href='/css/utilities.css')
+      link(rel='stylesheet' href='/css/project.css')
 
   body
+    noscript
+      include views/messages/javascript.html
+
     block content
       
     block scripts
+      script(src='/js/vendors/jquery.js')
+      script(src='/js/vendors/jquery-ui.js')
+      script(src='/js/vendors/typed.js')
       script(src='/js/main.js')
