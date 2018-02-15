@@ -29,12 +29,16 @@ La page Ressources est une collection d’articles et outils utiles pour apprend
 
 Un framework CSS a été développé pour l’occasion avec Stylus. Le [code source de BASICSS](https://github.com/basicss/basicss) est disponible sur Github
 
-## _build
+### src
+Le dossier src est le dossier de travail, il contient les sources du projet.
+
+### _build
 Le dossier **_build** contient la version de développement. Trois fichiers CSS sont utilisés :
 * « main » pour le framework ;
 * « utilities » pour les classes utiles (color, spacing, typography) ;
 * « project » pour le CSS du projet lui-même.
 
+### dist
 Le dossier **dist** contient le dossier de production.
 
 Le JS est concaténé et minifié.
